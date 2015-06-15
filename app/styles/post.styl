@@ -1,0 +1,246 @@
+.post
+	padding 0 160px
+	margin-top 40px
+	@media (max-width: 950px)
+		padding 0 40px
+	@media (max-width: 578px)
+		padding 0 20px
+	
+	a.arrows
+		background-color $light-gray
+		position fixed
+		top 50%
+		margin-top -60px
+		height 120px
+		display block
+		cursor pointer
+		z-index 900
+		width 60px
+		transition: all .3s ease-in 50ms;
+		text-transform uppercase
+		@media (max-width: 578px and 950px)
+			display none
+				
+	
+	.prev
+		left 0px
+		background-position top left
+		p
+			display block
+			margin-top 120px
+			transition: all .3s ease-in 50ms;
+			width 204px
+			font-size 14px
+			font-weight 500
+			background-color $white
+			border 1px solid $light-gray
+			padding 20px 17px
+			position relative
+			left -275px
+			
+			
+		&:hover
+			.prev-page, .next-page
+				background-color $gray
+				width 120px
+			p
+				display block
+				width 204px
+				left 0
+			width 240px
+	.next
+		right 0px
+		background-position top right
+		p
+			display block
+			margin-top 120px
+			transition: all .3s ease-in 50ms;
+			width 204px
+			font-size 14px
+			font-weight 500
+			background-color $white
+			border 1px solid $light-gray
+			padding 20px 17px
+			position relative
+			right -275px
+		&:hover
+			.prev-page, .next-page
+				background-color $gray
+				width 120px
+				
+			p
+				display block
+				width 204px
+				right 0
+			width 240px
+		
+	.prev-page
+	.next-page
+		position absolute
+		right 0
+		top 0
+		bottom 0
+		width 60px
+		background-color $light-gray
+		background-image url(../images/prev-page@2x.png)
+		background-position center
+		background-repeat no-repeat
+		padding 10px
+		transition: all .3s ease-in 50ms;
+	
+	.next-page
+		right initial
+		left 0
+		background-image url(../images/next-page@2x.png)
+		
+	.container
+		margin-bottom 30px
+		padding-right 0px
+		@media (max-width: 950px)
+			padding-right 36px
+		@media (max-width: 578px)
+			padding 0 10px
+	
+	p
+		font-family "Proxima-Nova"
+		font-weight 100
+		line-height 26px
+	
+	ul
+		padding-left 0
+		
+		h6
+			margin-bottom 0
+			font-size 20px
+		p
+			margin-top 0
+			font-size 16px
+			font-family "Proxima-Nova"
+	
+	.cta
+		color #fff
+		background-color: $gray
+		margin-left 36px
+		margin-right 19px
+		text-align center
+		font-family "Proxima-Nova"
+		text-transform uppercase
+		padding-right 26px
+		padding-left 26px
+		@media (max-width: 578px)
+			margin 0 10px
+			padding 0
+		
+		.container
+			padding 0 50px
+			@media (max-width: 578px)
+				padding 0 20px
+			h6
+				margin 0
+				padding-top 62px
+				padding-bottom 36px
+				font-size 30px
+				letter-spacing 4px
+				line-height 28px
+				@media (max-width: 578px)
+					font-size 25px
+			
+			p
+				font-size 16px
+				margin 0
+				font-weight 100
+				letter-spacing 3px
+				line-height 38px
+				padding-bottom 86px
+	.tags
+		color $light-gray
+		text-transform uppercase
+		font-size 12px
+		font-family "Proxima-Nova"
+		.container
+			@media (max-width: 578px)
+				margin-bottom 30px
+				padding 0 10px
+			
+		li
+			display inline-block
+			color $green
+			padding-left 10px
+			text-transform capitalize
+			&:hover
+				text-decoration underline
+				cursor pointer
+	.comments
+		text-transform uppercase
+		color $light-gray
+		font-size 12px
+		display flex
+		font-family "Proxima-Nova"
+		height 50px
+		border-bottom 1px solid $light-gray
+		margin 0 auto 0 36px
+		max-width 1079px
+		
+		.container
+			margin 0
+			padding 0
+			@media (max-width: 578px)
+				margin 0 auto
+			.hold
+				display flex
+				font-weight 900
+				.active
+					color $green
+					border-bottom 1px solid $green
+					padding-bottom 12px
+				p
+					font-weight 500
+					letter-spacing 2px
+					cursor pointer
+				p:first-child
+					margin-right 40px
+		
+	.comments-form
+		margin-top 21px
+		.form-hold
+			margin-bottom 23px
+			display flex
+			@media (max-width: 578px and 768px)
+				display block
+		.formgroup
+			border 1px solid $light-gray
+			font-family "Proxima-Nova"
+			padding 13px 11px
+			label
+				font-size 10px
+				font-weight bold
+				text-transform uppercase
+			input
+				border none
+				font-size 14px
+				outline none
+				display block
+				&::-webkit-input-placeholder
+					font-weight 100
+					font-family "Proxima-Nova"
+			textarea
+				border none
+				resize none
+				outline none
+				display block
+				font-size 14px
+				&::-webkit-input-placeholder
+					font-weight 100
+					font-family "Proxima-Nova"
+		.formgroup:first-child
+			margin-right 28px
+			@media (max-width: 578px and 768px)
+				margin-right 0px
+				margin-bottom 10px
+		.comment-area
+			margin-top 26px
+		.btn-green
+			float right
+			border none
+			margin-top 23px
+			

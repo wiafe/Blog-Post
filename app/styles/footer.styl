@@ -1,0 +1,79 @@
+.foot
+	margin-top 70px
+	.container
+		padding-left 0
+		padding-right 0
+		.col-md-12
+			border-top 1px solid $light-gray
+			text-transform uppercase
+			font-size 12px
+			font-family "Proxima-Nova"
+			font-weight 600
+			position fixed
+			bottom 0px
+			left 0
+			right 0
+			background-color #fff
+			z-index 3
+			@media (max-width: 578px)
+				display flex
+			.left
+				padding-left 27px
+				.active
+					color $green
+				span:first-child
+					margin 0 25px
+				span
+					cursor pointer
+			.right
+				margin 0
+				padding 12px 25px
+				color $green
+				border-left 1px solid $light-gray
+				p 
+					cursor pointer
+		.col-md-7
+			display flex
+			width 100%
+			padding 0
+			border-top 1px solid $light-gray
+			@media (max-width: 578px)
+				display block
+			
+			.col-md-6 > a:hover
+				text-decoration underline
+				
+				
+			.prev-post
+				text-align right
+				padding-right 29px
+				border-right 1px solid $light-gray
+				margin-left 138px
+				@media (max-width: 950px)
+					margin-left 100px
+				@media (max-width: 578px)
+					padding 0 10px
+					margin-left 0
+					text-align center
+				
+			.next-post
+				text-align left
+				padding-left 29px
+				margin-right 138px
+				@media (max-width: 950px)
+					margin-right 100px
+				@media (max-width: 578px)
+					padding 0 10px
+					margin-right 0
+					text-align center
+			h6
+				color $green
+				font-size 12px
+				text-transform uppercase
+				font-family "Proxima-Nova"
+			a
+				font-size 20px
+				font-weight 100
+				
+				&:visited
+					color #000

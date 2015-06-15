@@ -1,0 +1,10 @@
+{
+  "name": "prolife-wi",
+  "version": "0.0.0",
+  "dependencies": {
+    
+    "jquery": "~2.1.1"
+    
+  },
+  "devDependencies": {}
+}

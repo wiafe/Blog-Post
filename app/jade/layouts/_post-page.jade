@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    title prolife-wi
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    meta(content='3 days', name='revisit-after')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    // build:css /styles/main.css
+    link(rel="stylesheet", href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    link(href='/styles/main.css', rel='stylesheet')
+    // endbuild
+    script(src='http://use.typekit.net/bxc7xbp.js')
+    script try{Typekit.load();}catch(e){}
+
+  body(class=page)#fixed
+    .overlay
+
+
+    include nav
+    include title
+    include share
+    include post
+    include footer
+
+    block content
+
+    // Footer
+    
+
+    // build:js /scripts/main.js
+    
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/scripts/jquery.inview.js')
+    script(src='/scripts/main.js')
+
+    // endbuild
