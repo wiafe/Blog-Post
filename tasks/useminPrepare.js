@@ -1,11 +1,11 @@
-// /**
-//  * grunt-useminPrepare options
-//  * @type {Object}
-//  */
+/**
+ * grunt-useminPrepare options
+ * @type {Object}
+ */
 
-// module.exports = {
-//   html: '<%= folders.tmp %>/index.html',
-//   options: {
-//     dest: '<%= folders.dist %>'
-//   }
-// };
+module.exports = {
+  html: '<%= folders.tmp %>/index.html',
+  options: {
+    dest: '<%= folders.dist %>'
+  }
+};

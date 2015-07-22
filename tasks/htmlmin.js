@@ -1,15 +1,15 @@
-// /**
-//  * grunt-contrib-htmlmin options
-//  * @type {Object}
-//  */
+/**
+ * grunt-contrib-htmlmin options
+ * @type {Object}
+ */
 
-// module.exports = {
-//   dist: {
-//     files: [{
-//       expand: true,
-//       cwd: '<%= folders.tmp %>',
-//       src: '{,*/}*.html',
-//       dest: '<%= folders.dist %>'
-//     }]
-//   }
-// };
+module.exports = {
+  dist: {
+    files: [{
+      expand: true,
+      cwd: '<%= folders.tmp %>',
+      src: '{,*/}*.html',
+      dest: '<%= folders.dist %>'
+    }]
+  }
+};
